@@ -10,4 +10,5 @@ def find_missing(list1,list2):
 			count = set1 - set2
 			count = list(count)
 
-	list1.append(count)
+	list3.append(count)
+	return (list3)
