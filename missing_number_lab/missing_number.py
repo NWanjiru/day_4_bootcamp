@@ -1,10 +1,13 @@
-def find_missing(my_list):
+def find_missing(list1,list2):
 
-	list1 = []
-	count = 0
+	list3 = []
+	count =0
 
-	for i in my_list:
-		for x in range(len(my_list)):
-			if i == my_list[x]:
-				count = 0
-		list1.append(count)
+	for i in list1:
+		if i in list2:
+			set1 = set(list1)
+			set2 = set(list2)
+			count = set1 - set2
+			count = list(count)
+
+	list1.append(count)
